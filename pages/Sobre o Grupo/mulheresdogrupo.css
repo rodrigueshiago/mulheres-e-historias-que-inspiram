@@ -1,0 +1,313 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E PALETA DE CORES (Padrão do Site)
+   ========================================================================== */
+:root {
+    --rosa-claro-bg: #fff0f5;
+    --rosa-card-bg: #fce4ec;
+    --rosa-primario: #f48fb1;
+    --rosa-vibrante: #ec407a;
+    --rosa-escuro: #880e4f;
+    --texto-cor: #5d1037;
+    --sombra-padrao: 0 4px 12px rgba(236, 64, 122, 0.12);
+    --sombra-hover: 0 10px 22px rgba(236, 64, 122, 0.25);
+    --transicao: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--rosa-claro-bg);
+    color: var(--rosa-escuro);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   CABEÇALHO E NAVEGAÇÃO
+   ========================================================================== */
+.header {
+    background-color: var(--rosa-card-bg);
+    border-bottom: 2px solid var(--rosa-primario);
+    padding: 20px 5%;
+    box-shadow: var(--sombra-padrao);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0px 2px 4px rgba(236, 64, 122, 0.2));
+}
+
+.site-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--rosa-escuro);
+    line-height: 1;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--rosa-escuro);
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    font-size: 0.95rem;
+    transition: var(--transicao);
+}
+
+.nav-menu a.interactive:hover {
+    background-color: var(--rosa-vibrante);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   CONTAINER PRINCIPAL
+   ========================================================================== */
+.main-container {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ==========================================================================
+   SEÇÃO DE INTRODUÇÃO
+   ========================================================================== */
+.intro-section {
+    background-color: var(--rosa-card-bg);
+    border-radius: 24px;
+    border: 2px solid var(--rosa-vibrante);
+    overflow: hidden;
+    box-shadow: var(--sombra-padrao);
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+}
+
+.intro-image-container {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    background-color: #f8bbd0;
+}
+
+.intro-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.intro-text {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.badge {
+    align-self: flex-start;
+    background-color: var(--rosa-vibrante);
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 15px;
+    letter-spacing: 0.5px;
+}
+
+.section-main-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--rosa-escuro);
+    line-height: 1.2;
+}
+
+.intro-text p {
+    font-size: 1.05rem;
+    color: var(--texto-cor);
+    line-height: 1.6;
+}
+
+.section-divider {
+    border: none;
+    height: 2px;
+    background-color: var(--rosa-primario);
+    opacity: 0.5;
+}
+
+/* ==========================================================================
+   SEÇÃO DE CARDS (Estilo idêntico ao historias.html)
+   ========================================================================== */
+.stories-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.category-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--rosa-escuro);
+    border-bottom: 2px solid var(--rosa-primario);
+    padding-bottom: 8px;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.story-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.story-card {
+    background-color: #ffffff;
+    border-radius: 18px;
+    border: 1px solid var(--rosa-primario);
+    overflow: hidden;
+    box-shadow: var(--sombra-padrao);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: var(--transicao);
+}
+
+.story-card.interactive:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--sombra-hover);
+    border-color: var(--rosa-vibrante);
+}
+
+.story-img-container {
+    width: 100%;
+    height: 220px;
+    background-color: var(--rosa-card-bg);
+    overflow: hidden;
+}
+
+.story-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.story-card:hover .story-img {
+    transform: scale(1.05);
+}
+
+.story-content {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.category-tag {
+    align-self: flex-start;
+    background-color: var(--rosa-card-bg);
+    color: var(--rosa-escuro);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--rosa-primario);
+    letter-spacing: 0.5px;
+}
+
+.story-content h4 {
+    font-size: 1.35rem;
+    color: var(--rosa-escuro);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.story-content p {
+    font-size: 0.95rem;
+    color: var(--texto-cor);
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.btn-link-small {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--rosa-vibrante);
+    margin-top: 8px;
+    transition: var(--transicao);
+}
+
+.story-card:hover .btn-link-small {
+    color: var(--rosa-escuro);
+    padding-left: 4px;
+}
+
+/* ==========================================================================
+   RODAPÉ
+   ========================================================================== */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--rosa-card-bg);
+    border-top: 2px solid var(--rosa-primario);
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE
+   ========================================================================== */
+@media (max-width: 800px) {
+    .intro-section {
+        grid-template-columns: 1fr;
+    }
+    .intro-image-container {
+        min-height: 220px;
+    }
+    .site-title {
+        font-size: 2.2rem;
+    }
+}

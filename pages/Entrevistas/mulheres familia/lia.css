@@ -1,0 +1,304 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E PALETA DE CORES (Padrão do Projeto)
+   ========================================================================== */
+:root {
+    --rosa-claro-bg: #fff0f5;
+    --rosa-card-bg: #fce4ec;
+    --rosa-primario: #f48fb1;
+    --rosa-vibrante: #ec407a;
+    --rosa-escuro: #880e4f;
+    --texto-cor: #5d1037;
+    --sombra-padrao: 0 4px 12px rgba(236, 64, 122, 0.12);
+    --sombra-hover: 0 10px 22px rgba(236, 64, 122, 0.25);
+    --transicao: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--rosa-claro-bg);
+    color: var(--rosa-escuro);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   CABEÇALHO E NAVEGAÇÃO
+   ========================================================================== */
+.header {
+    background-color: var(--rosa-card-bg);
+    border-bottom: 2px solid var(--rosa-primario);
+    padding: 20px 5%;
+    box-shadow: var(--sombra-padrao);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0px 2px 4px rgba(236, 64, 122, 0.2));
+}
+
+.site-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--rosa-escuro);
+    line-height: 1;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--rosa-escuro);
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    font-size: 0.95rem;
+    transition: var(--transicao);
+}
+
+.nav-menu a.interactive:hover {
+    background-color: var(--rosa-vibrante);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   ESTILO DO ARTIGO E CARD DE ENTREVISTA
+   ========================================================================== */
+.main-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.interview-card {
+    background-color: var(--rosa-card-bg);
+    border-radius: 20px;
+    border: 1px solid var(--rosa-primario);
+    padding: 40px;
+    box-shadow: var(--sombra-padrao);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Perfil (Foto e Títulos) */
+.interview-profile {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.profile-image-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 3px solid var(--rosa-vibrante);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    flex-shrink: 0;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.badge {
+    align-self: flex-start;
+    background-color: var(--rosa-vibrante);
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+}
+
+.person-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--rosa-escuro);
+    line-height: 1.1;
+}
+
+.person-subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--rosa-vibrante);
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: var(--rosa-primario);
+    opacity: 0.6;
+}
+
+/* Corpo da Entrevista */
+.interview-body {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 1.05rem;
+    color: var(--texto-cor);
+}
+
+.highlight-paragraph {
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--rosa-escuro);
+}
+
+/* Caixa de Tópicos */
+.learnings-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid var(--rosa-primario);
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.learnings-box h4 {
+    font-size: 1.1rem;
+    color: var(--rosa-escuro);
+    font-weight: 700;
+}
+
+.learnings-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.learnings-list li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 0.98rem;
+}
+
+.learnings-list li::before {
+    content: "•";
+    color: var(--rosa-vibrante);
+    font-weight: bold;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+
+/* Citações e Balões */
+.quote-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-left: 5px solid var(--rosa-vibrante);
+    padding: 15px 20px;
+    border-radius: 0 12px 12px 0;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--rosa-escuro);
+    margin: 10px 0;
+}
+
+.message-box {
+    background-color: var(--rosa-vibrante);
+    color: #ffffff;
+    border-left: none;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.15rem;
+    padding: 18px;
+}
+
+/* Botão do Rodapé do Card */
+.card-footer {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: var(--rosa-vibrante);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: var(--transicao);
+    font-size: 0.95rem;
+}
+
+.btn-back:hover {
+    background-color: var(--rosa-escuro);
+    transform: translateY(-2px);
+    box-shadow: var(--sombra-hover);
+}
+
+/* Rodapé Principal */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--rosa-card-bg);
+    border-top: 2px solid var(--rosa-primario);
+    margin-top: 50px;
+    font-size: 0.85rem;
+}
+
+/* Responsividade */
+@media (max-width: 650px) {
+    .interview-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    .badge {
+        align-self: center;
+    }
+    .person-title {
+        font-size: 1.8rem;
+    }
+    .card-footer {
+        text-align: center;
+    }
+}

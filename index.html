@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulheres e Histórias que Inspiram</title>
+
+    <!-- Fonte Cursiva e Segoe UI para o Título Principal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Segoe+UI:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Vinculando ao arquivo CSS na mesma pasta -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="header">
+        <div class="header-top">
+            <!-- Logo Centralizada -->
+            <div class="logo-container">
+                <img src="./IMG/LogoRosaAvengersDS.png" alt="Logo do Projeto" class="logo-img">
+            </div>
+            <!-- Título Principal -->
+            <h1 class="site-title">Mulheres & Histórias que Inspiram</h1>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#historias">Histórias</a></li>
+                <li><a href="#sobre-grupo">Sobre o Grupo</a></li>
+                <li><a href="#mural">Mural</a></li>
+                <li><a href="#galeria">Bastidores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+
+        <!-- Conteúdo Principal / Explicação do Projeto (CLICÁVEL) -->
+        <section id="inicio">
+            <a href="./pages/Conteúdo Principal/conteudoprincipal.html" class="card-link">
+                <div class="card hero-section interactive">
+                    <div class="card-image">
+                        <img src="./IMG/projeto-principal.jpg" alt="Apresentação do Projeto">
+                    </div>
+                    <div class="card-content">
+                        <h2>Conteúdo Principal</h2>
+                        <h3>O Projeto</h3>
+                        <p class="short-text">Vozes, trajetórias e a força das mulheres que transformam nossa comunidade
+                            diária.</p>
+                        <span class="btn-link">Clique para saber mais →</span>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <!-- Chamada para a Seção de Histórias (CLICÁVEL) -->
+        <section id="historias" class="section-container">
+            <h2 class="section-title">Histórias de Inspirar</h2>
+            <div class="card story-banner-card interactive"
+                onclick="window.location.href='./pages/Entrevistas/pagina inicial/paginainicial.html'">
+                <div class="card-image">
+                    <img src="./IMG/mulheres.jpg" alt="Relatos de Mulheres">
+                </div>
+                <div class="card-content">
+                    <h3>Conheça Nossas Entrevistadas</h3>
+                    <p class="short-text">Relatos marcantes de superação, dedicação e afeto contados por quem faz a
+                        história acontecer.</p>
+                    <a href="./pages/Entrevistas/pagina inicial/paginainicial.html" class="btn-link">Acessar todas as histórias
+                        →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Sobre o Grupo (CARDS CLICÁVEIS) -->
+        <section id="sobre-grupo" class="section-container">
+            <h2 class="section-title">Sobre o Grupo</h2>
+
+            <div class="group-grid">
+
+                <!-- Card 1: Grupo Inteiro -->
+                <a href="./pages/Sobre o Grupo/sobreogrupo.html" class="card-link">
+                    <div class="card interactive">
+                        <div class="card-image">
+                            <img src="./IMG/FotoGrupo.jpg" alt="Foto do Grupo Inteiro">
+                        </div>
+                        <div class="card-content">
+                            <h3>Grupo Inteiro</h3>
+                            <p class="short-text">Quem somos e como construímos este projeto juntos.</p>
+                            <span class="btn-link">Ver equipe →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 2: Mulheres do Grupo -->
+                <a href="./pages/Sobre o Grupo/mulheresdogrupo.html" class="card-link">
+                    <div class="card interactive">
+                        <div class="card-image">
+                            <img src="./IMG/MulheresGrupo.jpg" alt="Mulheres do Grupo">
+                        </div>
+                        <div class="card-content">
+                            <h3>Mulheres do Grupo</h3>
+                            <p class="short-text">A força e a representatividade feminina na nossa equipe.</p>
+                            <span class="btn-link">Conhecer alunas →</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Mural de Vozes (Carrossel em CSS Puro - 28 Participantes) -->
+        <section id="mural" class="section-container">
+            <h2 class="section-title">Mural de Vozes</h2>
+
+            <div class="carousel-container">
+                <!-- Inputs de Rádio Ocultos (28 slides) -->
+                <input type="radio" name="carousel-radio" id="slide1" checked>
+                <input type="radio" name="carousel-radio" id="slide2">
+                <input type="radio" name="carousel-radio" id="slide3">
+                <input type="radio" name="carousel-radio" id="slide4">
+                <input type="radio" name="carousel-radio" id="slide5">
+                <input type="radio" name="carousel-radio" id="slide6">
+                <input type="radio" name="carousel-radio" id="slide7">
+                <input type="radio" name="carousel-radio" id="slide8">
+                <input type="radio" name="carousel-radio" id="slide9">
+                <input type="radio" name="carousel-radio" id="slide10">
+                <input type="radio" name="carousel-radio" id="slide11">
+                <input type="radio" name="carousel-radio" id="slide12">
+                <input type="radio" name="carousel-radio" id="slide13">
+                <input type="radio" name="carousel-radio" id="slide14">
+                <input type="radio" name="carousel-radio" id="slide15">
+                <input type="radio" name="carousel-radio" id="slide16">
+                <input type="radio" name="carousel-radio" id="slide17">
+                <input type="radio" name="carousel-radio" id="slide18">
+                <input type="radio" name="carousel-radio" id="slide19">
+                <input type="radio" name="carousel-radio" id="slide20">
+                <input type="radio" name="carousel-radio" id="slide21">
+                <input type="radio" name="carousel-radio" id="slide22">
+                <input type="radio" name="carousel-radio" id="slide23">
+                <input type="radio" name="carousel-radio" id="slide24">
+                <input type="radio" name="carousel-radio" id="slide25">
+                <input type="radio" name="carousel-radio" id="slide26">
+                <input type="radio" name="carousel-radio" id="slide27">
+                <input type="radio" name="carousel-radio" id="slide28">
+
+                <div class="carousel-track-wrapper">
+                    <div class="carousel-track">
+
+                        <!-- 1. Eliane -->
+                        <div class="carousel-slide s1">
+                            <blockquote class="carousel-quote">"O capricho e o cuidado com cada cantinho da escola
+                                mostram o amor que temos pelo nosso trabalho e por todos que frequentam este espaço."
+                            </blockquote>
+                            <cite class="carousel-author">— Eliane de Mato Souza</cite>
+                        </div>
+
+                        <!-- 2. Juliane -->
+                        <div class="carousel-slide s2">
+                            <blockquote class="carousel-quote">"Cuidar da nutrição e da alimentação escolar é garantir
+                                saúde, bem-estar e energia para que os estudantes possam aprender e crescer com
+                                qualidade."</blockquote>
+                            <cite class="carousel-author">— Juliane Besson de Araújo</cite>
+                        </div>
+
+                        <!-- 3. Fabiana -->
+                        <div class="carousel-slide s3">
+                            <blockquote class="carousel-quote">"Acompanhar o dia a dia dos alunos por tantos anos nos
+                                permite ver de perto o desenvolvimento e o sucesso de cada um deles."</blockquote>
+                            <cite class="carousel-author">— Fabiana Aparecida Marcelo Nunes</cite>
+                        </div>
+
+                        <!-- 4. Talita -->
+                        <div class="carousel-slide s4">
+                            <blockquote class="carousel-quote">"A matemática nos ensina a resolver problemas, mas a
+                                paixão pela docência é o que nos conecta verdadeiramente à vida dos alunos."
+                            </blockquote>
+                            <cite class="carousel-author">— Talita Nonato Cardoso</cite>
+                        </div>
+
+                        <!-- 5. Layla -->
+                        <div class="carousel-slide s5">
+                            <blockquote class="carousel-quote">"O acolhimento socioemocional e a escuta atenta são
+                                fundamentais para que cada aluno se sinta seguro e compreendido na escola."</blockquote>
+                            <cite class="carousel-author">— Layla Vicini Risato</cite>
+                        </div>
+
+                        <!-- 6. Edna -->
+                        <div class="carousel-slide s6">
+                            <blockquote class="carousel-quote">"Fiquem bem, se cuidem e até a próxima. A geografia nos
+                                ensina a ler o mundo, mas é o afeto que transforma a sala de aula."</blockquote>
+                            <cite class="carousel-author">— Edna Cristina Lira Matos Gomes</cite>
+                        </div>
+
+                        <!-- 7. Isabela -->
+                        <div class="carousel-slide s7">
+                            <blockquote class="carousel-quote">"Educar na inclusão é um ato diário de afeto e paciência.
+                                Ver cada criança conquistar seu espaço e se sentir pertencente é a maior recompensa."
+                            </blockquote>
+                            <cite class="carousel-author">— Isabela Batalos Venerando</cite>
+                        </div>
+
+                        <!-- 8. Bárbara -->
+                        <div class="carousel-slide s8">
+                            <blockquote class="carousel-quote">"Retornar ao SESI para cuidar do cotidiano e apoiar os
+                                estudantes é uma alegria imensa e uma forma de retribuir tudo o que vivi aqui."
+                            </blockquote>
+                            <cite class="carousel-author">— Bárbara Iara de Castro Alves</cite>
+                        </div>
+
+                        <!-- 9. Flaviene -->
+                        <div class="carousel-slide s9">
+                            <blockquote class="carousel-quote">"A ciência e a robótica abrem portas para o futuro, mas o
+                                tempo dedicado a ouvir os alunos é o que realmente molda cidadãos conscientes."
+                            </blockquote>
+                            <cite class="carousel-author">— Flaviene Marins Pereira Vaz</cite>
+                        </div>
+
+                        <!-- 10. Erika -->
+                        <div class="carousel-slide s10">
+                            <blockquote class="carousel-quote">"A vocação para ensinar vai muito além dos números; é um
+                                compromisso com a vida e com a formação humana de cada estudante."</blockquote>
+                            <cite class="carousel-author">— Erika Maria Camulesi Mota</cite>
+                        </div>
+
+                        <!-- 11. Maria de Lourdes -->
+                        <div class="carousel-slide s11">
+                            <blockquote class="carousel-quote">"A perseverança e o carinho colocados em cada prato
+                                refletem o respeito que temos pela saúde e pela felicidade dos nossos alunos."
+                            </blockquote>
+                            <cite class="carousel-author">— Maria de Lourdes Ferreira Souza</cite>
+                        </div>
+
+                        <!-- 12. Kyan -->
+                        <div class="carousel-slide s12">
+                            <blockquote class="carousel-quote">"A maternidade atípica me ensinou a olhar o mundo com
+                                mais sensibilidade e a entender que o verdadeiro cuidado nasce da escuta e do respeito."
+                            </blockquote>
+                            <cite class="carousel-author">— Kyan Luisa dos Santos</cite>
+                        </div>
+
+                        <!-- 13. Carla -->
+                        <div class="carousel-slide s13">
+                            <blockquote class="carousel-quote">"A persistência na educação e na matemática nos prova que
+                                qualquer obstáculo pode ser superado com dedicação e planejamento."</blockquote>
+                            <cite class="carousel-author">— Carla Zuliani Sandrin Camargo</cite>
+                        </div>
+
+                        <!-- 14. Valéria -->
+                        <div class="carousel-slide s14">
+                            <blockquote class="carousel-quote">"Liderar uma escola exige escuta ativa, sensibilidade e
+                                um compromisso inegociável com o bem-estar e o desenvolvimento de todos."</blockquote>
+                            <cite class="carousel-author">— Valéria Aparecida da Silva</cite>
+                        </div>
+
+                        <!-- 15. Anna Beatriz -->
+                        <div class="carousel-slide s15">
+                            <blockquote class="carousel-quote">"Não devemos abaixar a cabeça. Nós, mulheres, temos a
+                                força umas das outras; se todo mundo se juntar e fizer acontecer, estaremos no topo."
+                            </blockquote>
+                            <cite class="carousel-author">— Anna Beatriz do Nascimento</cite>
+                        </div>
+
+                        <!-- 16. Eunice -->
+                        <div class="carousel-slide s16">
+                            <blockquote class="carousel-quote">"A alfabetização é a chave que abre todas as portas do
+                                conhecimento. Ver uma criança descobrir o poder das letras é algo emocionante."
+                            </blockquote>
+                            <cite class="carousel-author">— Eunice Alves de Souza Camargo</cite>
+                        </div>
+
+                        <!-- 17. Lucimara -->
+                        <div class="carousel-slide s17">
+                            <blockquote class="carousel-quote">"A biblioteca precisa ser um espaço vivo de encontro e
+                                autonomia, onde cada livro desperta uma nova possibilidade de sonho."</blockquote>
+                            <cite class="carousel-author">— Lucimara Regina Michelin Campos dos Santos</cite>
+                        </div>
+
+                        <!-- 18. Milena -->
+                        <div class="carousel-slide s18">
+                            <blockquote class="carousel-quote">"Alfabetizar no Ensino Fundamental com afeto e dedicação
+                                é construir as bases firmes para um futuro repleto de conquistas."</blockquote>
+                            <cite class="carousel-author">— Milena Cristina Domingues Paz Pereira</cite>
+                        </div>
+
+                        <!-- 19. Thayane -->
+                        <div class="carousel-slide s19">
+                            <blockquote class="carousel-quote">"Por mais que nosso trabalho na secretaria não seja tão
+                                visível quanto em sala de aula, estamos nos bastidores trabalhando juntos para
+                                proporcionar o melhor."</blockquote>
+                            <cite class="carousel-author">— Thayane Surcin Delima Esquerdo</cite>
+                        </div>
+
+                        <!-- 20. Karina -->
+                        <div class="carousel-slide s20">
+                            <blockquote class="carousel-quote">"Não percam a sua essência, façam aquilo que gostam e
+                                amam, mantenham sempre a empatia pelo outro e acreditem nos seus sonhos."</blockquote>
+                            <cite class="carousel-author">— Karina</cite>
+                        </div>
+
+                        <!-- 21. Isabelly -->
+                        <div class="carousel-slide s21">
+                            <blockquote class="carousel-quote">"A história de cada mulher que conheci foi uma
+                                aprendizagem para mim. Percebi que, além de criar um projeto para inspirar, eu também
+                                fui inspirada."</blockquote>
+                            <cite class="carousel-author">— Isabelly Victoria de Souza Silva</cite>
+                        </div>
+
+                        <!-- 22. Larissa -->
+                        <div class="carousel-slide s22">
+                            <blockquote class="carousel-quote">"Não esperem até se sentirem 100% preparadas para
+                                começar. Acreditem nas suas ideias e se juntem com pessoas que compartilhem da mesma
+                                energia."</blockquote>
+                            <cite class="carousel-author">— Larissa Aliotto Matheus</cite>
+                        </div>
+
+                        <!-- 23. Simony -->
+                        <div class="carousel-slide s23">
+                            <blockquote class="carousel-quote">"Não será fácil, mas só depende de você, das suas
+                                escolhas e das suas decisões. Seja sempre persistente, confiante, nunca perca sua fé e
+                                nunca desista dos seus sonhos. Você pode realizar, você consegue."</blockquote>
+                            <cite class="carousel-author">— Simony de Souza Silva</cite>
+                        </div>
+
+                        <!-- 24. Marilena -->
+                        <div class="carousel-slide s24">
+                            <blockquote class="carousel-quote">"Tenha certeza daquilo de que gosta e leve em frente. É a
+                                gente mesma que tem que lutar para conseguir. Se você não luta, não consegue. Nunca
+                                desista daquilo que você gosta, daquilo que quer fazer e de quem quer ser futuramente."
+                            </blockquote>
+                            <cite class="carousel-author">— Marilena Turquete Aliotto</cite>
+                        </div>
+
+                        <!-- 25. Lia -->
+                        <div class="carousel-slide s25">
+                            <blockquote class="carousel-quote">"Não tenham medo de recalcular a rota. Honrem suas
+                                origens, trabalhem com verdade e acreditem que a coragem de seguir a própria intuição
+                                sempre vale a pena."</blockquote>
+                            <cite class="carousel-author">— Lia Mara Buran</cite>
+                        </div>
+
+                        <!-- 26. Paula -->
+                        <div class="carousel-slide s26">
+                            <blockquote class="carousel-quote">"Busquem conhecimento e procurem alcançar seus sonhos,
+                                que devem ser elevados. Para isso, é necessário ter empenho, concentração e dedicação. O
+                                conhecimento é algo que ninguém pode tirar de nós e pode abrir muitos caminhos ao longo
+                                da vida."</blockquote>
+                            <cite class="carousel-author">— Paula Claro</cite>
+                        </div>
+
+                        <!-- 27. Ana Paula -->
+                        <div class="carousel-slide s27">
+                            <blockquote class="carousel-quote">"Não tenham medo de mudar de direção e buscar o que
+                                realmente faz sentido para suas vidas e suas famílias, enfrentando os desafios com
+                                coragem, união e perseverança."</blockquote>
+                            <cite class="carousel-author">— Ana Paula de Oliveira Silva</cite>
+                        </div>
+
+                        <!-- 28. Amanda -->
+                        <div class="carousel-slide s28">
+                            <blockquote class="carousel-quote">"Nunca desistam e acreditem em si mesmas e em sua
+                                capacidade. Se houver pedras no caminho, junte-as para construir um castelo, uma casa ou
+                                uma ponte, pois a vida é linda e vale a pena seguir firme no caminho escolhido."
+                            </blockquote>
+                            <cite class="carousel-author">— Amanda Paz</cite>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Setas Esquerda (Voltar) -->
+                <label for="slide28" class="carousel-btn prev-btn btn-s1">&#10094;</label>
+                <label for="slide1" class="carousel-btn prev-btn btn-s2">&#10094;</label>
+                <label for="slide2" class="carousel-btn prev-btn btn-s3">&#10094;</label>
+                <label for="slide3" class="carousel-btn prev-btn btn-s4">&#10094;</label>
+                <label for="slide4" class="carousel-btn prev-btn btn-s5">&#10094;</label>
+                <label for="slide5" class="carousel-btn prev-btn btn-s6">&#10094;</label>
+                <label for="slide6" class="carousel-btn prev-btn btn-s7">&#10094;</label>
+                <label for="slide7" class="carousel-btn prev-btn btn-s8">&#10094;</label>
+                <label for="slide8" class="carousel-btn prev-btn btn-s9">&#10094;</label>
+                <label for="slide9" class="carousel-btn prev-btn btn-s10">&#10094;</label>
+                <label for="slide10" class="carousel-btn prev-btn btn-s11">&#10094;</label>
+                <label for="slide11" class="carousel-btn prev-btn btn-s12">&#10094;</label>
+                <label for="slide12" class="carousel-btn prev-btn btn-s13">&#10094;</label>
+                <label for="slide13" class="carousel-btn prev-btn btn-s14">&#10094;</label>
+                <label for="slide14" class="carousel-btn prev-btn btn-s15">&#10094;</label>
+                <label for="slide15" class="carousel-btn prev-btn btn-s16">&#10094;</label>
+                <label for="slide16" class="carousel-btn prev-btn btn-s17">&#10094;</label>
+                <label for="slide17" class="carousel-btn prev-btn btn-s18">&#10094;</label>
+                <label for="slide18" class="carousel-btn prev-btn btn-s19">&#10094;</label>
+                <label for="slide19" class="carousel-btn prev-btn btn-s20">&#10094;</label>
+                <label for="slide20" class="carousel-btn prev-btn btn-s21">&#10094;</label>
+                <label for="slide21" class="carousel-btn prev-btn btn-s22">&#10094;</label>
+                <label for="slide22" class="carousel-btn prev-btn btn-s23">&#10094;</label>
+                <label for="slide23" class="carousel-btn prev-btn btn-s24">&#10094;</label>
+                <label for="slide24" class="carousel-btn prev-btn btn-s25">&#10094;</label>
+                <label for="slide25" class="carousel-btn prev-btn btn-s26">&#10094;</label>
+                <label for="slide26" class="carousel-btn prev-btn btn-s27">&#10094;</label>
+                <label for="slide27" class="carousel-btn prev-btn btn-s28">&#10094;</label>
+
+                <!-- Setas Direita (Avançar) -->
+                <label for="slide2" class="carousel-btn next-btn btn-s1">&#10095;</label>
+                <label for="slide3" class="carousel-btn next-btn btn-s2">&#10095;</label>
+                <label for="slide4" class="carousel-btn next-btn btn-s3">&#10095;</label>
+                <label for="slide5" class="carousel-btn next-btn btn-s4">&#10095;</label>
+                <label for="slide6" class="carousel-btn next-btn btn-s5">&#10095;</label>
+                <label for="slide7" class="carousel-btn next-btn btn-s6">&#10095;</label>
+                <label for="slide8" class="carousel-btn next-btn btn-s7">&#10095;</label>
+                <label for="slide9" class="carousel-btn next-btn btn-s8">&#10095;</label>
+                <label for="slide10" class="carousel-btn next-btn btn-s9">&#10095;</label>
+                <label for="slide11" class="carousel-btn next-btn btn-s10">&#10095;</label>
+                <label for="slide12" class="carousel-btn next-btn btn-s11">&#10095;</label>
+                <label for="slide13" class="carousel-btn next-btn btn-s12">&#10095;</label>
+                <label for="slide14" class="carousel-btn next-btn btn-s13">&#10095;</label>
+                <label for="slide15" class="carousel-btn next-btn btn-s14">&#10095;</label>
+                <label for="slide16" class="carousel-btn next-btn btn-s15">&#10095;</label>
+                <label for="slide17" class="carousel-btn next-btn btn-s16">&#10095;</label>
+                <label for="slide18" class="carousel-btn next-btn btn-s17">&#10095;</label>
+                <label for="slide19" class="carousel-btn next-btn btn-s18">&#10095;</label>
+                <label for="slide20" class="carousel-btn next-btn btn-s19">&#10095;</label>
+                <label for="slide21" class="carousel-btn next-btn btn-s20">&#10095;</label>
+                <label for="slide22" class="carousel-btn next-btn btn-s21">&#10095;</label>
+                <label for="slide23" class="carousel-btn next-btn btn-s22">&#10095;</label>
+                <label for="slide24" class="carousel-btn next-btn btn-s23">&#10095;</label>
+                <label for="slide25" class="carousel-btn next-btn btn-s24">&#10095;</label>
+                <label for="slide26" class="carousel-btn next-btn btn-s25">&#10095;</label>
+                <label for="slide27" class="carousel-btn next-btn btn-s26">&#10095;</label>
+                <label for="slide28" class="carousel-btn next-btn btn-s27">&#10095;</label>
+                <label for="slide1" class="carousel-btn next-btn btn-s28">&#10095;</label>
+
+            </div>
+        </section>
+
+        <!-- Galeria do Projeto -->
+        <section id="galeria" class="section-container">
+            <h2 class="section-title">Bastidores</h2>
+            <div class="gallery-grid">
+
+                <div class="card gallery-item non-clickable">
+                    <img src="IMG/bastidores/bastidores.jpg" alt="Bastidores">
+                </div>
+
+                <div class="card gallery-item non-clickable">
+                    <img src="IMG/bastidores/bastidores1.jpg" alt="Bastidores 1">
+                </div>
+
+                <div class="card gallery-item non-clickable">
+                    <img src="IMG/bastidores/bastidores2.jpg" alt="Bastidores 2">
+                </div>
+
+                <div class="card gallery-item non-clickable">
+                    <img src="IMG/bastidores/bastidores3.jpg" alt="Bastidores 3">
+                </div>
+
+                <div class="card gallery-item non-clickable">
+                    <img src="IMG/bastidores/bastidores4.jpg" alt="Bastidores 4">
+                </div>
+
+                <div class="card gallery-item non-clickable">
+                    <img src="IMG/bastidores/bastidores5.jpg" alt="Bastidores 5">
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2026 - Projeto Mulheres e Histórias que Inspiram | SESI</p>
+    </footer>
+
+</body>
+
+</html>

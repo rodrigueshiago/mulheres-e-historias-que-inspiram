@@ -1,0 +1,343 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E PALETA DE CORES
+   ========================================================================== */
+:root {
+    --rosa-claro-bg: #fff0f5;
+    --rosa-card-bg: #fce4ec;
+    --rosa-primario: #f48fb1;
+    --rosa-vibrante: #ec407a;
+    --rosa-escuro: #880e4f;
+    --texto-cor: #5d1037;
+    --sombra-padrao: 0 4px 12px rgba(236, 64, 122, 0.12);
+    --sombra-hover: 0 10px 22px rgba(236, 64, 122, 0.25);
+    --transicao: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--rosa-claro-bg);
+    color: var(--rosa-escuro);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   CABEÇALHO COM LOGO NA LATERAL DO TÍTULO
+   ========================================================================== */
+.header {
+    background-color: var(--rosa-card-bg);
+    border-bottom: 2px solid var(--rosa-primario);
+    padding: 20px 5%;
+    box-shadow: var(--sombra-padrao);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0px 2px 4px rgba(236, 64, 122, 0.2));
+}
+
+.site-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--rosa-escuro);
+    line-height: 1;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--rosa-escuro);
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    font-size: 0.95rem;
+    transition: var(--transicao);
+}
+
+.nav-menu a.interactive:hover {
+    background-color: var(--rosa-vibrante);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   CONTAINER PRINCIPAL
+   ========================================================================== */
+.main-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/* ==========================================================================
+   CARD DE DESTAQUE PRINCIPAL (PROFESSORA EDNA)
+   ========================================================================== */
+.featured-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.featured-badge {
+    align-self: flex-start;
+    background-color: var(--rosa-vibrante);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 15px;
+    letter-spacing: 0.5px;
+}
+
+.featured-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.featured-card {
+    background-color: var(--rosa-card-bg);
+    border-radius: 24px;
+    border: 2px solid var(--rosa-vibrante);
+    overflow: hidden;
+    box-shadow: var(--sombra-padrao);
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    transition: var(--transicao);
+}
+
+.featured-card-link:hover .featured-card {
+    transform: translateY(-6px);
+    box-shadow: var(--sombra-hover);
+}
+
+.featured-image-container {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    background-color: #f8bbd0;
+}
+
+.featured-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-content {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.category-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--rosa-vibrante);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.featured-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--rosa-escuro);
+    line-height: 1.2;
+}
+
+.featured-summary {
+    font-size: 1rem;
+    color: var(--texto-cor);
+    line-height: 1.5;
+}
+
+.btn-read-more {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: var(--rosa-vibrante);
+    color: #ffffff;
+    font-weight: 700;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    transition: var(--transicao);
+}
+
+.featured-card-link:hover .btn-read-more {
+    background-color: var(--rosa-escuro);
+}
+
+.section-divider {
+    border: none;
+    height: 2px;
+    background-color: var(--rosa-primario);
+    opacity: 0.5;
+    margin: 10px 0;
+}
+
+/* ==========================================================================
+   ESTILOS DAS CATEGORIAS DIVIDIDAS
+   ========================================================================== */
+.stories-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.category-block {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.category-heading {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--rosa-escuro);
+    border-bottom: 2px solid var(--rosa-primario);
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.category-heading .icon {
+    font-size: 1.3rem;
+}
+
+/* ==========================================================================
+   GRELHA DE CARDS
+   ========================================================================== */
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.story-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.story-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid var(--rosa-primario);
+    overflow: hidden;
+    box-shadow: var(--sombra-padrao);
+    transition: var(--transicao);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.story-card-link:hover .story-card {
+    transform: translateY(-6px);
+    box-shadow: var(--sombra-hover);
+    border-color: var(--rosa-vibrante);
+}
+
+.story-img-container {
+    width: 100%;
+    height: 190px;
+    background-color: var(--rosa-card-bg);
+}
+
+.story-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.story-content h4 {
+    font-size: 1.2rem;
+    color: var(--rosa-escuro);
+    font-weight: 700;
+}
+
+.story-content p {
+    font-size: 0.92rem;
+    color: var(--texto-cor);
+    flex-grow: 1;
+}
+
+.btn-link-small {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--rosa-vibrante);
+    margin-top: 10px;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--rosa-card-bg);
+    border-top: 2px solid var(--rosa-primario);
+    margin-top: 50px;
+    font-size: 0.85rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .featured-card {
+        grid-template-columns: 1fr;
+    }
+    .featured-image-container {
+        min-height: 220px;
+    }
+    .site-title {
+        font-size: 2.2rem;
+    }
+}
